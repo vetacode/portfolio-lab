@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 } */
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #61dafb;
+  /* font-weight: bold; */
+  transform: scale(1.1);
+  transition: 0.1s ease-in-out;
+}
