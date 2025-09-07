@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useFormik } from 'formik';
 import {
   Box,
@@ -17,9 +17,6 @@ import FullScreenSection from './FullScreenSection';
 import useSubmit from '../hooks/useSubmit';
 import { useAlertContext } from '../context/alertContext';
 
-/**
- * Covers a complete form implementation using formik and yup for validation
- */
 const ContactMeSection = () => {
   const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
