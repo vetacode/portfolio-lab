@@ -12,15 +12,15 @@ import { Box, HStack } from '@chakra-ui/react';
 const socials = [
   {
     icon: faEnvelope,
-    url: 'mailto: hello@example.com',
+    url: 'mailto: vetacode@gmail.com',
   },
   {
     icon: faGithub,
-    url: 'https://www.github.com/sureskills',
+    url: 'https://github.com/vetacode',
   },
   {
     icon: faLinkedin,
-    url: 'https://www.linkedin.com/in/sureskills/',
+    url: 'https://www.linkedin.com/in/veta-code-b0426b34b/',
   },
   {
     icon: faMedium,
@@ -32,12 +32,6 @@ const socials = [
   },
 ];
 
-/**
- * This component illustrates the use of both the useRef hook and useEffect hook.
- * The useRef hook is used to create a reference to a DOM element, in order to tweak the header styles and run a transition animation.
- * The useEffect hook is used to perform a subscription when the component is mounted and to unsubscribe when the component is unmounted.
- * Additionally, it showcases a neat implementation to smoothly navigate to different sections of the page when clicking on the header elements.
- */
 const Header = () => {
   const headerRef = useRef(null);
 
@@ -110,6 +104,9 @@ const Header = () => {
           </nav>
           <nav>
             <HStack spacing={8}>
+              <a href='#aboutme' onClick={handleClick('aboutme')}>
+                About Me
+              </a>
               <a href='#projects' onClick={handleClick('projects')}>
                 Projects
               </a>
